@@ -1,18 +1,19 @@
 package Model;
 
-import java.util.ArrayList;
-
 public class Hamburguer {
-     private ArrayList<String> ingredientes;
+    public String ingredientes;
+    public String ingredientes2;
+    public String ingredientes3;
+    public String ingredientes4;
 
-     public Hamburguer(ArrayList<String> ingredientes) {
-         this.ingredientes = ingredientes;
-     }
-    public ArrayList<String> getIngredientes() {
-        return ingredientes;
+    public Hamburguer(String ingredientes, String ingredientes2, String ingredientes3, String ingredientes4) {
+        this.ingredientes = ingredientes;
+        this.ingredientes2 = ingredientes2;
+        this.ingredientes3 = ingredientes3;
+        this.ingredientes4 = ingredientes4;
     }
 
-    public void setIngredientes(ArrayList<String> ingredientes) {
-        this.ingredientes = ingredientes;
+    public String gethamburgao(){
+        return ingredientes + " " + ingredientes2 + " " + ingredientes3 + " " + ingredientes4;
     }
 }

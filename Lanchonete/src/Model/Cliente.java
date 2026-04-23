@@ -1,11 +1,11 @@
 package Model;
 public class Cliente {
     private String nome;
-    private String sobrenome;
+    private String ingredientes;
 
-    public Cliente(String nome, String sobrenome) {
+    public Cliente(String nome, String ingredientes) {
         this.nome = nome;
-        this.sobrenome = sobrenome;
+        this.ingredientes = ingredientes;
     }
 
     public void Hello(){
@@ -16,7 +16,7 @@ public class Cliente {
     }
 
     public String getNomeInteiro(){
-        return nome + " " + sobrenome;
+        return nome + " " + ingredientes;
     }
 
     public String getNome() {
@@ -27,11 +27,11 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getSobrenome() {
-        return sobrenome;
+    public String getIngredientes() {
+        return ingredientes;
     }
 
-    public void setSobrenome(String ingredientes) {
-        this.sobrenome = sobrenome;
+    public void setIngredientes(String ingredientes) {
+        this.ingredientes = ingredientes;
     }
 }
